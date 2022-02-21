@@ -1,0 +1,32 @@
+{
+  "name": "servidorweb",
+  "version": "1.0.0",
+  "description": "Servidor de administracion y productos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app2"
+  },
+  "keywords": [],
+  "author": "Ricardo Altamirano Sanschez",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.26.3",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "1.2.1",
+    "express-validator": "^6.11.1",
+    "google-auth-library": "^7.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.7",
+    "nodemon": "^2.0.15",
+    "require-stack": "^1.0.2",
+    "socket.io": "^4.4.1",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "npm": "6.14.5",
+    "node": "v14.5.0"
+  }
+}
