@@ -4,7 +4,7 @@ const Usuario=require('../models/usuario')
 const Categoria=require('../models/categorias');
 const Producto=require('../models/productos');
 const Playeras=require('../models/playeras');
-
+const ChatMensajes = require('../models/chat-mensajes');
 
 module.exports={
     Rol,
@@ -12,7 +12,8 @@ module.exports={
     Usuario,
     Categoria,
     Producto,
-    Playeras
+    Playeras,
+   ChatMensajes
 
 }
 

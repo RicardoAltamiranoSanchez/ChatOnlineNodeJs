@@ -107,7 +107,9 @@ this.app.use(bodyParser.urlencoded({ extended: true }));
 sockets(){
 
        //encendemos el socket io y de decimos de donde va tomar la configuracion
-      this.io.on('connection',socketController);
+        //enviamos la referencia del socket ya que es una funcion de flecha
+       //y enviamos el this.io que contiene toda la configuracion de socket
+      this.io.on('connection',(socket)=>{socketController(socket,this.io)});
 }
 // ya no e pone el app this.app.listen se pone el server para utilizar los sockets
 

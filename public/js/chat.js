@@ -7,7 +7,12 @@
 
 //hacemos la validacion de nuestro token en la parte del frontend
 
-
+//Referencias html
+const txtUid     = document.querySelector('#txtUid');
+const txtMensaje = document.querySelector('#txtMensaje');
+const ulUsuarios = document.querySelector('#ulUsuarios');
+const ulMensajes = document.querySelector('#ulMensajes');
+const btnSalir   = document.querySelector('#btnSalir');
 
 //validacion del token
 
@@ -41,12 +46,38 @@ console.error(`Error en la petcion al servidor ${error}`);
 
 const ConectandoSocket=async ()=>{
 //mandamos la informacion por el token para la verificacion o conexion va caer en el controlador del toke
-const socket=await io({
+ const socket=await io({
 //extraHeaders son parametros ya predifinidos en socket io
 'extraHeaders':{
   'x-token':localStorage.getItem('token')    
 }
 });
+
+socket.on('connect',()=>{
+console.log("Socket conectado");
+
+});
+
+socket.on('disconnect',()=>{
+
+console.log("Socket desconectado");
+
+});
+
+socket.on('recibir-mensajes',()=>{
+
+
+});
+
+socket.on('usuarios-conectados',(playlod)=>{
+console.log(playlod)
+
+})
+
+socket.on('mensaje-privado',()=>{
+
+
+})
 
 }
 
