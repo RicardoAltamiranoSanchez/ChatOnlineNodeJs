@@ -1,11 +1,16 @@
 //configuracion de google y validacion del token en el backend  
+
        console.log(window.location.hostname.includes('localhost'));
+
 const miformulario=document.querySelector('form');//obtenemos el formulario
 
 
        var url = ( window.location.hostname.includes('localhost') )
             ? 'http://localhost:8080/Api/authentication/'
             : '';//Aqui el servidor de heroku
+
+
+
 
 miformulario.addEventListener('submit',(ev)  =>{
 ev.preventDefault();
@@ -60,7 +65,8 @@ document.location='chat.html';//cuando ya pasamos todo el proceso y este verific
             })
             .then( resp =>   resp.json() )
             .then( ({token}) => {//hacemos destrururacion para obtener el token la validacion de campos en la rutas de goggle no agarra la validcacion si lo ponemos
-                  localStorage.setItem('token',token),
+                
+               localStorage.setItem('token',token),
                   document.location="chat.html";
 }
         
@@ -84,4 +90,4 @@ document.location='chat.html';//cuando ya pasamos todo el proceso y este verific
 
                    });
                    }
-        
+  

@@ -1,0 +1,58 @@
+*{
+background-color: rgb(0,66,66);
+color:white;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+body hr{
+color:rgb(0,168,107);
+padding:2px;
+}
+.login {
+
+margin-top:30px;
+text-align:center;
+display:flex;
+ align-items: center;
+   justify-content: center;
+ border-style: solid;
+border-color: rgb(0,168,107);
+border-radius: 20px;
+padding:20px;
+color:rgb(0,168,107);
+ line-height: 2;
+  box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+margin-left: 30%;
+
+}
+.titulo{
+text-align:center;
+color:white;
+}
+.login h1{
+margin-top:-290px;
+font-size:30px;
+}
+.d-grid{
+display:flex;
+margin-right: 150px;
+margin-top:10px;
+gap:5px;
+}
+
+
+.footer__texto{
+color:white;
+font-size: 1rem;
+text-align: center;
+margin-top: 100px;
+font-size:1.3rem;
+margin-left: 90px;
+}
+.grid{
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:2rem;
+}
