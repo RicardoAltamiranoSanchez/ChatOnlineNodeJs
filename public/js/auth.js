@@ -7,7 +7,7 @@ const miformulario=document.querySelector('form');//obtenemos el formulario
 
        var url = ( window.location.hostname.includes('localhost') )
             ? 'http://localhost:8080/Api/authentication/'
-            : '';//Aqui el servidor de heroku
+            : 'https://chatnodejsricardo.herokuapp.com/Api/authentication/';//Aqui el servidor de heroku
 
 
 
